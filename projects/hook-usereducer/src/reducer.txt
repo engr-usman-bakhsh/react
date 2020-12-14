@@ -1,0 +1,68 @@
+for knowing about the useReducer we have to know all about the reducer() method of javascript
+
+what is useReducer?
+useReducer is a hook for state management
+useReducer is alternative to useState. 
+whats the difference betwee nthe two?
+>> useState is infact built using useReducer
+so useReducer is more premitive hook compare to useState.
+
+here is a most important question
+when to use useReducer vs useState?
+we'll get its answer after going through some examples.
+
+for now we have to know that useReducer is a hook for state management.
+
+the major point is that we dont have to know about redux to know all about useReducer.
+
+-------------------------------------------------------------
+
+we have some built in javascript functions for array
+forEach, map, reduce.
+
+we have to know more about reduce function.
+the reduce() method executes a reducer() function (that we provide) on each element of the array, resulting in a single output value.
+
+
+const array1 =[1,2,3,4]
+const reducer = (accumulator, currentValue) => accumulator + currentValue;
+console.log(array1.reduce(reducer))
+ // expected o/p is 10,
+
+console.log(array1.reduce(reducer, 5))
+// expected o/p is 15;
+
+
+two important points
+1- reduce() function tale two parameters.
+2- first parameter is a reducer() function and the second parameter is the initial value that the reducer function can make use of.
+
+there is a huge similarity between reduce and useReducer hook.
+
+>> reduce is javascript, and useReducer in react.
+>>>> syntax for reducer is 
+    array.reduce(reducer , initialValue)
+>>>> syntax for useReducer is
+    useReducer(reducer, initialState)
+
+>> in case of reducer
+    singleValue = reducer(accumulator, itemValue)
+>> in case of useReducer
+    newState = reducer(currentState , action)
+    action is an object with two values action.type and action.payload
+
+>> reduce method returns a single value 
+
+>> useReducer returns a pair of values.
+    [newState, dispatch] 
+    dispatch is a method which is basically used to specify the action.
+
+Summary
+
+>> useReducer is a hook that is used for state management in React.
+>> useReducer is related to reducer functions
+>> useReducer(reducer, initialState)
+>> reducer(currentState , action)
+>> useReducer is used to chang the states in react component.  
+
+

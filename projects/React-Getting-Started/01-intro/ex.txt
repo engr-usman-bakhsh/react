@@ -1,0 +1,30 @@
+react started
+
+React is a client side JS Library. client side means it runs on the user machine
+React is created and maintained by the Facebook best and the best developers are taking care of it.
+
+It allows the user interface more dynamic and divide is into separate components
+
+React has vertual DOM which is a best thing. without even reloading the page we can perform any other task to do alongside with existing task which is being under processing
+
+we can make http requests to the server and get data without reloading the page. we can do the same thing with vanilla JS but its ten time more deficult than react. react make it more easy and organize every thing by making its a components. 
+components have their own states, their own methods and their own properties
+
+MVC is a designed pattern called the model view controlller. and react is simply the V of MVC.
+Model deals with data and Controller deals with getting the data from the model and send it to the view. and VIEW is responsible for displaying to the user
+
+React is technically a 'library' but is compatible with frameworks and on the top;
+its a library because it missing a few key things that are included in most frameworks. for example a ROUTER, Anguler and vue has router.
+react has a REACT ROUTER which can be easily installed using the npm. 
+
+react has state managers like REDUX which is belong to the React ecosystem to make it even more powerfull and we'll work on redux later on.
+
+react components are reuseable within the same project or sometimes in other project. this make our app more scalable and more efficient.
+
+the most important thing is that the react is the hottest technology in the javascript world. there is a lot of jobs looking for the react developers.
+
+
+
+
+
+

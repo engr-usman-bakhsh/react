@@ -1,0 +1,9 @@
+now we'll deal with states and deal with embedding components with other components.
+
+lets i have a contacts component. in which i want to have a state which holds all the different contacts basically an object that has different contacts with the name, email, and phone number.
+an inside that contact component i'll loop through the people or contacts in that state and then output a specific contact module or module component for each one.
+
+now create a new file Contacts.js. it will have a class based components which actually have a state.
+.
+
+constructor is not need if only want to make a state. its used if we want to instantiate an object.

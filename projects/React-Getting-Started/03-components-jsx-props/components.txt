@@ -1,0 +1,26 @@
+i simple javascript we pick and choose different things from dom and do some implementation on it. but in react we have to think more deeply to know about its working behaviour.
+we have to develop a habit of thinking each and every thing like a component like react.
+react works differently, it works on the base of  component. in which our output is the part of a component and out javascript and all functionality is inside that component.
+that component can hold a state. it can also have props or properties.
+navbar may be a component, a header may be a component, some statistics data(like followers,following,liked pages) in facebook is also a component. Bio may b a component. signup is also a component. some components are also nested in other components. 
+
+what is state?
+state is just a data attached with a component. in bio component we have  data about our profile like age,education,contacts etc. this data is called state. 
+here we have to know that there are two types of components.
+1- smart component
+2- dumb component. 
+
+smart component is something whose state can be changed like a BIO component. every user hase different state in his/her bio component. 
+
+on the other side the signup component is just a dumb component. because its same on each and every page of any user profile. so this does not need any kind of state.
+we have stateless functional components with dumb components. 
+
+BUT 
+
+any components that has a state needs a class.
+
+in lot of casses we need to share the states between components. for example if we want to access the states of bio from any other component we need something like context API, redux or other state manager because these alow you to have application level state. so we keep state at the application level then from any component we can access it.
+we'll learn about context api's first and then we'll jump into redux. 
+
+in react we have events to manipulate the components. 
+

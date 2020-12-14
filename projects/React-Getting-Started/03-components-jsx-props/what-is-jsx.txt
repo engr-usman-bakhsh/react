@@ -1,0 +1,44 @@
+jsx is a javascript extension. it alllows us to put html inside the javascript code. 
+jsx has some rules.
+
+we cannot use "class" attribute. so we have used the className.
+
+we cannot use the "for" attribute that we use in <label> tag. we have to use "htmlFor" instead of it.  
+
+we can not use that html tags without "/" which are single tags like <input type="text">, <br>, <hr>
+we have to use slash with them like <input type="text" />, <br/>, <hr/>
+
+we can return only a single parent element inside the return. like 
+
+return{
+    <div "first parent">
+
+    </div>
+
+    <div "second parent">
+    // this second parent element is not allowed in jsx.
+    </div>
+
+    we can wrap both of the above tags inside a dive to remove error.
+}
+
+react is just like a synthetic sugar if we have to write is syntax manually it will be verry difficult.
+
+like if we want to write following lines in react manually
+this is in jsx file.
+    return (
+      <div className="App">
+        <h1>The App Component!</h1>
+      </div>
+    );
+
+
+than we have to write then in such a way;
+
+this is with out jsx in javascript
+  return React.createElement(
+      'div', //element created
+      { className: 'App' }, // class name 
+      React.createElement('h1', null, 'The App Component') //inside element is created.
+    );
+

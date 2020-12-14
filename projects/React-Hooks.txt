@@ -1,0 +1,24 @@
+here we'll learn all about react hooks.
+
+?///////////////////////////////////
+State Hook
+state can only be used in clas components. bu we use a react hook named as useState() to use state in functional component.
+syntax
+const [state , setState] = useState({
+    name: "sdfghj",
+    email: dfgh@dfgh.com
+})
+
+
+....------------------------------------------------------
+useEffect() hook.
+this hook can replace the following life cycles.
+componentDidMount(){} // it runs one time on render
+componentDidUpdate(){} // it runs on every render/
+componentWillUnmount(){}
+
+
+useEffect(() => {
+    something: "3456 4567 456"
+}) // useEffect runs after every render of document.
+it is written inside the function of functional component.

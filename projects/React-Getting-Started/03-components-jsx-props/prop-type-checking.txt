@@ -1,0 +1,16 @@
+pro type can also be fixed which was sendingg.
+
+
+put at start
+import PropTypes from 'prop-types'
+
+
+
+
+put at last in Header.txt
+Header.propTypes = {
+    heading: PropTypes.string.isRequired,
+}
+
+if this string is converted to object, then warning will be appear in our code.
+error will be in console.

@@ -1,0 +1,66 @@
+any type of javascript expression can be written before the retun. if its a variable and have stored any value that we can call it inside the return and html tag within curly braces{} like.
+
+render() {
+    const name = "usman";
+    const place = "REACT"
+    return (
+      <div className="App">
+        <h1>The App Component!</h1>
+        <h4>hello {name}! welcome in {place.toLowerCase()}</h4>
+      </div>
+    );
+  }
+
+  we made two variable and used them in h2 html tag with some more javascript implementation to convert one of them in lowercase. 
+  inshort any type of javascript expression can be written here.
+  like 
+  <h4> 1 + 1 = {1+1}</h4>
+  -----------------------
+
+  conditionals with turnery operators can also be implemented like.
+
+render() {
+    const name = "usman";
+    const place = "REACT"
+    const showHello = false;
+
+    return (
+      <div className="App">
+        <h1>The App Component!</h1>
+        {showHello ? <h4>hello {name}! welcome in {place.toLowerCase()}</h4> : null}
+        <h4> 1 + 1 = {1 + 1}</h4>
+
+      </div>
+    );
+  }
+
+  in line 30 we putt a condition if showHello is "true" then show the h2 tag otherwise hide it.
+
+we can sole this by using if,else statements like.
+
+
+render() {
+    const name = "usman";
+    const place = "REACT"
+    const showHello = true;
+    let math;
+    if (showHello) {
+      math = <h4>hello {name}! welcome in {place.toLowerCase()}</h4>
+    } else {
+      math = null;
+    }
+    return (
+      <div className="App">
+        <h1>The App Component!</h1>
+        {math}
+        <h4> 1 + 1 = {1 + 1}</h4>
+
+      </div>
+    );
+  }
+
+we can do every thing with javascript above the return.
+  ------------------------------------------------------------------
+
+in real projects we didnot make variables like that, our variables come from states or props.
+this is just for example.

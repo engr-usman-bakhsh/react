@@ -1,0 +1,7 @@
+we have toinstall bootstrap inside the react app by running
+>> npm install bootstrap
+
+latest version of bootstrap will be downloaded and all files will be lie inside the build folder
+just import the bootstrap location inside the react component by writing
+
+import 'bootstrap/dist/css/bootstrap.min.css'
